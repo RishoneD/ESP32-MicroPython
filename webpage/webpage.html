@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="10">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trial Webpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+	
+	.wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      text-align: center;
+      background-color: #A2E3FA;
+    }
+
+    header {
+      background-color: #3A72B0;
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+    }
+
+    nav {
+      background-color: #5A9BD4;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    article {
+      padding: 20px;
+      background-color: #A2E3FA;
+    }
+
+    footer {
+      background-color: #3A72B0;
+      padding: 10px;
+      text-align: center;
+      color: white;
+	  margin-top: auto;
+    }
+
+    h1 {
+      color: #D6F7F2;
+    }
+    h2 {
+      color: #3A72B0;
+    }
+
+    .button1 {
+    background-color: #5A9BD4;
+    color: white;
+    border: none;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .button1:hover {
+    background-color: #D6F7F2;
+    color: #3A72B0;
+   
+  .InputClass {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Test Page</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="page2.html">Page 2</a></li>
+			</ul>
+		</nav>
+		
+		<article>
+			<h2>DATA 1: <strong>{{data1}}</strong></h2>
+			<h2>DATA 2: <strong>{{data2}}</strong></h2>
+
+			<p>
+				<a href="/test1"><button class="button1">Test 1</button></a>
+				<a href="/test2"><button class="button1">Test 2</button></a>
+			</p>
+			<p>
+				<a href="/test3"><button class="button1">Test 3</button></a>
+				<a href="/test4"><button class="button1">Test 4</button></a>
+			</p>
+
+			<form action="/send" method="GET">
+				<label for="send">Send:</label>
+				<input type="text" name="send" class="InputClass" size="15">
+			</form>
+		</article>
+
+		<footer>
+			<p>Webpage for ESP32 Projects, &copy; Rishone</p>
+		</footer>
+
+</body>
+</html>
